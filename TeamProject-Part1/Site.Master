@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TeamProject_Part1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- CSS -->
+
+    <link href="Content/app.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+
+    <title>ABC</title>
+
+</head> 
+<body>
+            <div class="content">   
+                
+    <form id="form1" runat="server">
+        <div style="width:500px; margin-left:auto;margin-right:auto">
+        <img src="Assets/BANNER.JPG" /">
+            </div>
+        <nav>
+                <ul>
+      <li id="Home" runat="server"><a class="active" href="Default.aspx">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#about">About</a></li>
+      <li style="float:right"><a>Login</a></li>
+      <li id="SignUp" runat="server" style="float:right; "><a href="SignUp.aspx">SignUp</a></li>
+                    
+    </ul>
+
+        </nav>
+        
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    
+    </form>
+                <br /><br />
+                <!-- FOOTER -->
+                <div style="width:980px; margin-left:auto; margin-right:auto;background-color:cadetblue;">
+
+
+        <div class="container">
+            <nav>
+            <p ><a href="#Top" style="color:black">Back to top</a>
+                &nbsp;|&nbsp;<a href="Default.aspx"style="color:black"><i class="fa fa-home fa-lg">Home</i></a>
+                &nbsp;|&nbsp;<a href="Contact.aspx"style="color:black"><i class="fa fa-newspaper-o fa-lg" >News</i></a>
+                
+                &nbsp;|&nbsp;<a href="About.aspx"style="color:black"><i class="fa fa-info fa-lg"></i>  About</a>
+            </p>
+            </nav>
+            </div>
+        </div>
+                    <p style="text-align:center"><font color="red"><em>&copy;&nbsp; Inderjeet Singh - Student Number: 300874118 / Abhinav Sharda - Student Number: 300868625  </em></font></p>
+                <!-- JAVA SCRIPT -->
+                <script src="Scripts/bootstrap.min.js"></script>
+                
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+                </div>
+</body>
+</html>
