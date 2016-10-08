@@ -1,7 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TeamProject_Part1.Site" %>
 
 <!DOCTYPE html>
-
+<!-- Name: Inderjeet Singh -->
+<!-- Student ID: 300874118 -->
+<!-- Date: October 7th, 2016 -->
+<!-- Date Modified: October 8th, 2016 -->
+<!-- Site.Master file -->
 <html>
 <head runat="server">
     <!-- CSS -->
@@ -11,7 +15,7 @@
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
 
-    <title>ABC</title>
+    <title>AI GAMES</title>
 
 </head> 
 <body>
