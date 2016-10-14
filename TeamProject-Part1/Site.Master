@@ -1,51 +1,72 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TeamProject_Part1.Site" %>
 
 <!DOCTYPE html>
-<!-- Name: Inderjeet Singh -->
+<!-- Name: Inderjeet Singh / Abhinav Sharda -->
 <!-- Student ID: 300874118 -->
 <!-- Date: October 7th, 2016 -->
 <!-- Date Modified: October 8th, 2016 -->
 <!-- Site.Master file -->
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <!-- CSS -->
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link href="Content/app.css" rel="stylesheet" />
+<title></title>
+<!-- CSS Section -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="Assets/images/logo.jpg" /> -->
 
-    <title>AI GAMES</title>
-
-</head> 
-<body>
-            <div class="content">   
-                
+</head>
+<body class="centered">
     <form id="form1" runat="server">
-        <div style="width:500px; margin-left:auto;margin-right:auto">
-        <img src="Assets/BANNER.JPG" /">
-            </div>
-        <nav>
-                <ul>
-      <li id="Home" runat="server"><a class="active" href="Default.aspx">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#about">About</a></li>
-      <li style="float:right"><a>Login</a></li>
-      <li id="SignUp" runat="server" style="float:right; "><a href="SignUp.aspx">SignUp</a></li>
-                    
-    </ul>
+        <img src="Assets/BANNER.jpg" class="banner" alt="banner" />
+        <div style="background-color:burlywood">
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Default.aspx">AI Games</a>
+                </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+                
+                <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                <li id="teams" runat="server"><a href="teams.aspx"><i class="fa fa-flag fa-lg"></i>Matches</a></li>
+                <li id="login" runat="server"><a href="SignUp.aspx"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
+            </ul>
+ 
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            
+            <!-- /.container-fluid -->
         </nav>
-        
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+        <!-- Main Content -->
+   
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
         </asp:ContentPlaceHolder>
         
-    
+    </div>
     </form>
-                <br /><br />
+              
                 <!-- FOOTER -->
-                <div style="width:980px; margin-left:auto; margin-right:auto;background-color:cadetblue;">
+                <div style="width:1024px; margin-left:auto; margin-right:auto;background-color:cadetblue;">
+
 
 
         <div class="container">
@@ -59,11 +80,12 @@
             </nav>
             </div>
         </div>
-                    <p style="text-align:center"><font color="red"><em>&copy;&nbsp; Inderjeet Singh - Student Number: 300874118 / Abhinav Sharda - Student Number: 300868625  </em></font></p>
+    
+                <p style="text-align:center"><font color="red"><em>&copy;&nbsp; Inderjeet Singh - Student Number: 300874118 / Abhinav Sharda - Student Number: 300868625  </em></font></p>
                 <!-- JAVA SCRIPT -->
-                <script src="Scripts/bootstrap.min.js"></script>
                 
+    <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-2.2.4.min.js"></script>
-                </div>
+                
 </body>
 </html>

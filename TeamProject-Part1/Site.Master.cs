@@ -13,22 +13,9 @@ namespace TeamProject_Part1
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Debug.WriteLine(Page.Title + " loaded...");
-            SetActivePage();
+
         }
 
-        private void SetActivePage()
-        {
-            switch (Page.Title)
-            {
-                case "Home":
-                    Home.Attributes.Add("class", "active");
-                    break;
 
-                case "Sign Up":
-                    SignUp.Attributes.Add("class", "active");
-                    break;
-            }
-        }
     }
 }

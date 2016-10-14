@@ -1,0 +1,11 @@
+
+Inderjeet Singh
+300874118
+
+Abhinav Sharda
+300868625
+Git hub repository for assignment1
+https://github.com/Kiritoinder/COMP229-F2016-TeamProject-Part1
+
+Azure
+http://comp229-teamproject-inderabhi.azurewebsites.net/
